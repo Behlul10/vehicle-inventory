@@ -21,6 +21,13 @@ public class Vehicle {
         this.odometerReading = odometerReading;
         this.price = price;
     }
+    public String getVehicleInfo(){
+        return "Vehicle ID: " + vehicleId + "\n" +
+                "Model: " + makeModel + "\n" +
+                "Color: " + color + "\n" +
+                "Odometer: " + odometerReading + "\n" +
+                "Price: $" + price;
+    }
 
     public long getVehicleId() {
         return vehicleId;
